@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>我的书架</title>
+<!-- 调用全局css -->
+<link type="text/css" rel="stylesheet" href="css/style.css" />       
+<!-- 调用JQuery插件 -->
+<script src="js/jquery-ui-1.12.12.custom/jquery-3.2.1.js"></script>
+<link href="js/jquery-ui-1.12.12.custom/jquery-ui.css" rel="stylesheet">
+<script src="js/jquery-ui-1.12.12.custom/external/jquery/jquery.js"></script>
+<script src="js/jquery-ui-1.12.12.custom/jquery-ui.js"></script>
+ <!-- 调用页面css -->
+<link href="css/myBook.css" rel="stylesheet">
+<!-- 调用动态效果代码 -->
+<script src="js/myBook.js"></script>
+
+</head>
+<body>
+<!-- 头部部分 -->
+<div id="overall">
+<div id="alla">
+      <!-- 头部 -->
+  <div class="soubg">
+  <div class="sou">
+        <span class="fr">
+          <span class="fl">你好，请<a href="login.html"><span style="font-weight: bold;"> 登录</span></a>&nbsp; <a href="register.html" style="color:#ff4e00;">免费注册</a>&nbsp;|&nbsp;<a href="mybook.html">我的书架</a>&nbsp;|</span>
+          <span class="ss">
+              <div class="ss_list">
+                  <a href="#">收藏夹</a>
+                    <div class="ss_list_bg">
+                      <div class="s_city_t"></div>
+                        <div class="ss_list_c">
+                          <ul>
+                              <li><a href="#">我的收藏夹</a></li>
+                                <li><a href="#">我的收藏夹</a></li>
+                            </ul>
+                        </div>
+                    </div>     
+                </div>
+            </span>
+            <span class="fl">|&nbsp;关注我们：</span>
+            <span class="s_sh"><a href="#" class="sh2">微信</a></span>
+            <span class="fr">|&nbsp;<a href="#">手机&nbsp;</span>
+        </span>
+    </div>
+</div>
+<div class="top">
+    <div class="logo"><a href="#"><img src="images/logo.png" /></a></div>
+    <div class="search">
+      <form>
+          <input type="text" value="" class="s_ipt" id="tags" />
+            <input type="submit" value="搜索" class="s_btn" style="height: 36px;" />
+        </form>                      
+        <span class="fl"><a href="#">斗破苍穹</a><a href="#">灵域</a><a href="#">诸天剑帝</a><a href="#">遮天</a><a href="#">斗罗大陆</a><a href="#">鬼神工作室</a></span>
+    </div>
+    
+  
+</div>
+
+<div class="menu_bg" style="height: 47px;">
+  <div class="menu">
+      <!--Begin 小说分类详情 Begin-->    
+      <div class="nav">
+          <div class="nav_t" id="allsp">全部小说分类  ↓</div>
+            <div class="leftNav">
+                <ul>      
+                    <li>
+                      <div class="fj">
+                          <span class="n_img"><span></span><img src="images/nav10.png" /></span>
+                            <span class="fl">玄幻 奇幻</span>
+                        </div>
+                        <div class="zj">
+                            <div class="zj_l">
+                                <div class="zj_l_a ">
+                                    <h2>小说分类</h2>
+                                    <a href="#">玄幻：《无上传承》 《绝世武魂》 《斗罗大陆》 《神武觉醒》 《混沌霸天绝》 《混沌武神》</a><br /> 
+                                    <a href="#">奇幻：《踏天封神》 《盘龙》 《傻仙丹帝》 《异界屠神雇佣兵》 《傲天剑仙》 《酒神》</a>
+                                    
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </li>
+                    <li>
+                      <div class="fj">
+                          <span class="n_img"><span></span><img src="images/nav10.png" /></span>
+                            <span class="fl">都市 现代言情</span>
+                        </div>
+                        <div class="zj" style="top:-40px;">
+                            <div class="zj_l">
+                                <div class="zj_l_a">
+                                    <h2>小说分类</h2>
+                                    <a href="#">都市：《校花贴身高手》 《逆天小农民》《最强兵王混花都》《桃运民工》 《全能高手》《异能神医在都市》</a>
+                                    <br />  
+                                    <a href="#">现代言情：《乡野多娇》 《六零俏军媳》 《军婚如火》 《先婚厚爱》 《风流小富农》 《最佳妻选》 </a>
+                                    </div>              
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                      <div class="fj">
+                          <span class="n_img"><span></span><img src="images/nav10.png" /></span>
+                            <span class="fl">仙侠 武侠></span>
+                        </div>
+                        <div class="zj" style="top:-80px;">
+                            <div class="zj_l">
+                                <div class="zj_l_a">
+                                    <h2>小说分类</h2>
+                                    <a href="#">仙侠：《灵鼎》 《凡人修仙传》 《神霄煞仙》 《星辰变》 《一念永恒》 《神道》</a>
+                                    <br />  
+                          <a href="#">武侠：《逍遥派》 《血狱江湖》 《败者食尘》 《华山三弟子》 《天机传奇》 《无敌黑拳》</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li>
+                      <div class="fj">
+                          <span class="n_img"><span></span><img src="images/nav10.png" /></span>
+                            <span class="fl">言情 穿越重生 </span>
+                        </div>
+                        <div class="zj" style="top:-120px;">
+                            <div class="zj_l">
+                                <div class="zj_l_a">
+                                    <h2>小说分类</h2>
+                                   <a href="#">言情：《偷偷深爱你》 《纨绔太子妃》 《婚迷杀手妻》 《夕阳亦悠然》 《前世今生》</a><br /> 
+                          <a href="#">创越重生：《最毒废妃》 《凤临天下:绝世弃妃》 《春闺梦里人》 《帝凰之神医弃妃》 《医品傲妻》</a>
+                                   
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li>
+                      <div class="fj">
+                          <span class="n_img"><span></span><img src="images/nav10.png" /></span>
+                            <span class="fl">灵异 悬疑</span>
+                        </div>
+                        <div class="zj" style="top:-160px;">
+                            <div class="zj_l">
+                                <div class="zj_l_a">
+                                    <h2>小说分类</h2>
+                                    <a href="#">灵异：《我是阴阳人》 《阴阳捉鬼师》 《御鬼天师》 《茅山捉鬼人》 《盗墓笔记》 《夜半阴婚》</a><br /> 
+                                    <a href="#">悬疑：《夜封门》 《邪灵都市》 《麻衣神算子》 《阴阳师秘事》 《麻衣神算子》</a>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </li>
+                    <li>
+                      <div class="fj">
+                          <span class="n_img"><span></span><img src="images/nav10.png" /></span>
+                            <span class="fl">游戏 青春校园</span>
+                        </div>
+                        <div class="zj" style="top:-200px;">
+                            <div class="zj_l">
+                                <div class="zj_l_a">
+                                    <h2>小说分类</h2>
+                                    <a href="#">游戏：《网游之巅峰召唤》 《极品装备制造师》 《竞技无双》 《重生之贼行天下》 《全职高手》</a><br />  
+                                    <a href="#">青春校园：《嗨，国民校草》 《重生之天才少女》 《早安，恶魔骑士！》 《神秘少女闯学院》 《掌上明珠》 </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li>
+                      <div class="fj">
+                          <span class="n_img"><span></span><img src="images/nav10.png" /></span>
+                            <span class="fl">军事 恐怖</span>
+                        </div>
+                        <div class="zj" style="top:-240px;">
+                            <div class="zj_l">
+                                <div class="zj_l_a">
+                                    <h2>小说分类</h2>
+                                    <a href="#">军事：《终极特战兵王》 《超极品兵王》 《龙魂兵王》 《我要打鬼子》 《最强兵王》</a>
+                                    <br />  
+                                    <a href="#">恐怖：《画皮匠》 《013号凶案密档》 《最后一个驱鬼道士》 《重亡灵禁地》 《诡案寻凶》</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li>
+                      <div class="fj">
+                          <span class="n_img"><span></span><img src="images/nav10.png" /></span>
+                            <span class="fl">豪门总裁 历史</span>
+                        </div>
+                        <div class="zj" style="top:-280px;">
+                            <div class="zj_l">
+                                <div class="zj_l_a">
+                                    <h2>小说分类</h2>
+                                    <a href="#">豪门总裁：《冥冥之中喜欢你》 《第七任新娘》 《天价前妻》 《神秘少女闯学院》 《缘来就是你》 </a>
+                                    <br />  
+                                    <a href="#">历史：《带着仓库到大明》 《寒门枭士》 《冒牌知县》 《燕子声声里》 《宋医》</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </li>
+                    <li>
+                      <div class="fj">
+                          <span class="n_img"><span></span><img src="images/nav10.png" /></span>
+                            <span class="fl">玄幻言情 古代言情</span>
+                        </div>
+                        <div class="zj" style="top:-320px;">
+                            <div class="zj_l">
+                                <div class="zj_l_a">
+                                    <h2>小说分类</h2>
+                                    <a href="#">玄幻言情：《邪尊的绝色宠妃》 《神医弃女》 《医品风华》 《医后倾天》 《玥舞九天》</a>
+                                    <br />  
+                                    <a href="#">古代言情：《画皮匠》 《013号凶案密档》 《最后一个驱鬼道士》 《重亡灵禁地》 《诡案寻凶》</a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </li>                    
+                    <li>
+                      <div class="fj">
+                          <span class="n_img"><span></span><img src="images/nav10.png" /></span>
+                            <span class="fl">二次元 同人小说</span>
+                        </div>
+                        <div class="zj" style="top:-360px;">
+                            <div class="zj_l">
+                                <div class="zj_l_a">
+                                    <h2>小说分类</h2>
+                                   <a href="#">二次元：《女帝的大内总管》 《我的女儿是吸血鬼》 《仙王的日常生活》 《长生九万年》 《精灵宠物店》 </a>
+                                   <br /> 
+                                   <a href="#">同人小说：《网王之赖上越前龙马》 《网王之猫型傲娇萝莉》 《综漫之契约女王》 《网王之公主殿下驾到》 《网王之重获新生》 </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </li>                     
+                </ul>            
+            </div>
+        </div>  
+        <!--End 小说分类详情 End-->                                                     
+      <ul class="menu_r">                                                                                                                                               
+         <li><a href="index.html">首页</a></li>
+            <li><a href="register.html">注册</a></li>
+            <li><a href="login.html">登录</a></li>
+            <li><a href="myBook.html">我的书架</a></li>
+            <li><a href="remove.html">小说管理</a></li>
+            <li><a href="area.html">评价</a></li>
+            <li><a href="#">男生</a></li>
+            <li><a href="#">女生</a></li>
+        </ul>
+        <div class="m_ad">中秋送好礼！</div>
+        <div class="hhs"></div>
+    </div>
+</div>
+
+<!-- 内容部分 -->
+     <div id="cart">
+        <h1 id="h1">我的书架</h1>
+        <table class="bar">
+            <thead>
+                <tr style="background:#fff;font-size:12px;height:30px;" class="tr_1 clearfix">
+                    <th>封面</th>
+                    <th>书名</th>
+                    <th>价格</th>
+                    <th>进度</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody id="goods">
+            </tbody>
+        </table>
+
+        <div class="fenlan clearfix">
+            <div class="fenlan_tj">
+                <h2 id="h12">添加小说</h2>
+                <span><a href="#"  style="color: red;">小说推荐</a></span>
+                <span><a href="#">最近看的</a></span>
+                <span><a href="#">猜你喜欢的</a></span>
+            </div>
+        </div>
+        <table id="products">
+            <tbody class="shop_cat clearfix" >
+                <tr class="clearfix conversion" title="我之路,当握于我手。 天地阻我,一剑劈之!神魔阻我,一剑斩之!剑道、王道、霸道!这就是我王辰的道!">
+                    <td>小说分类：玄幻</td>
+                    <td>
+                    <img src="images/gwca1.jpg" /></td>
+                    <td>《诸天剑帝》</td>
+                    <td>￥13.5</td>
+                    <td>
+                        <input type="button" value="加入书架" />
+                    </td>
+                </tr>
+                <tr class="conversion" title="冰冷与黑暗并存的宇宙深处，九具庞大的龙尸拉着一口青铜古棺，亘古长存。
+这是太空探测器在枯寂的宇宙中捕捉到的一幅极其震撼的画面。
+九龙拉棺，究竟是回到了上古，还是来到了星空的彼岸？
+一个浩大的仙侠世界，光怪陆离，神秘无尽。热血似火山沸腾，激情若瀚海汹涌，欲望如深渊无止境。
+登天路，踏歌行，弹指遮天。">
+                    <td>小说分类：仙侠</td>
+                    <td>
+                        <img src="images/gwca5.jpg" /></td>
+                    <td>《遮天》</td>
+                    <td>￥12.4</td>
+                    <td>
+                        <input type="button" value="加入书架" /></td>
+                </tr>
+                <tr class="conversion" title="这里是属于斗气的世界，没有花俏艳丽的魔法，有的，仅仅是繁衍到巅峰的斗气！
+心潮澎湃，无限幻想，迎风挥击千层浪，少年不败热血！">
+                    <td>小说分类：玄幻</td>
+                    <td>
+                        <img src="images/gwca3.jpg" /></td>
+                    <td>《斗破苍穹》</td>
+                    <td>￥21.2</td>
+                    <td>
+                        <input type="button" value="加入书架" /></td>
+                </tr>
+                <tr class="conversion" title="三万年前，自称为“神”的搏天族入侵灵域，百族奋起反抗，最终惨败，人族率先投诚，百族随后相继臣服。之后万年，所有种族皆被神族奴役，被严酷对待，生活在恐怖阴影中。神族征伐脚步，并未就此停止，以灵域为起始冲入各大秘境空间，四处树敌开战，战力消耗巨大，终被百族觅到机会一举击溃，不得不远遁域外星空。
+三万年后，在神族已成为古老传说的时代，一个怀有搏天族血脉的失忆少年，被寄养在一个小小家族，苟延残喘着，静候血脉觉醒的那天到来。
+">
+                    <td>小说分类：玄幻</td>
+                    <td>
+                        <img src="images/gwca4.jpg" /></td>
+                    <td>《灵域》</td>
+                    <td>￥19.8</td>
+                    <td>
+                        <input type="button" value="加入书架" /></td>
+                </tr>
+                <font></font>
+                <font></font>
+                <font></font>
+                <font></font>
+            </tbody>
+        </table>
+
+    </div>
+    <div class="popDiv">
+        <p class="ppppp"><span></span></p>
+        <p class="ppppp"><span></span></p>
+        <p class="ppppp"><span></span></p>
+        <p style="color:red;" class="ppppp"><span></span></p>
+        <a href="#" class="close"><button type=""><input type="button" name="" value="关闭"></button></a>
+    </div>
+    <!-- 添加一个div作为遮罩层 -->
+    <div id="hidebg"></div>
+
+<!--底部部分-->
+   <div id="aasj">
+     <div id="weiwei">
+      <div class="footer text-title" pbflag="footer" id="weiweiwei">
+        <div class="footer-content">
+            <p class="footer-nav">
+                <font><font>关于我们</font></font><font><font>官方微博</font></font><font><font>意见反馈及投诉</font></font><font><font>用户服务协议</font></font><font><font>隐私政策</font></font><font><font>网址大全</font></font>
+            </p>
+            <p><font><font>合理安排时间，享受健康生活。</font></font></p>
+            <p><font><font>健康阅读公告，抵制不良小说，拒绝盗版小说。</font><font>注意自我保护，谨防上当受骗。</font><font>合理安排时间，享受健康生活。</font></font></p>
+            <p class="opa">
+                <span><font><font>2019年4月5号</font></font></span>
+            </p>
+            <p class="opa"><font><font>版权zhang所有</font></font></p>
+        </div>
+      </div>
+    </div>
+   </div>
+</div>
+
+<!-- 左边栏跟随浏览器部分 -->
+<div id="div012">
+    <span>分享好友</span>
+</div>
+<!-- 右边栏快捷按钮部分 -->
+<div id="rightlan">
+    <ul>
+        <li><a href="index.html"><img src="images/shouye.png" alt=""></a></li>
+        <li><a href="myBook.html"><img src="images/shujia.png" alt=""></a></li>
+        <li><a href="#overall"><img src="images/dingbu.png" alt=""></a></li>
+    </ul>
+</div>
+</body>
+</html>

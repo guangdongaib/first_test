@@ -1,0 +1,145 @@
+@charset "utf-8";
+/*CSS 初始化*/
+body, dl, dt, dd, ul, ol, li, pre, form, fieldset, input, p, blockquote, th, td { margin:0; padding:0; }
+body {
+  font-size:12px;
+  line-height:23px;
+}
+textarea { resize:none; }
+
+/*公用样式*/
+.w1200{ width:1200px; margin:0 auto;}
+.f-l{ float:left;}
+
+/*底部 版权*/
+.footer{ padding:20px 0; text-align:center;}
+.footer p{ height:30px;font-size:14px; color:#000;}
+.footer p a{ display:inline-block; font-size:14px; color:#000;}
+.footer p a:hover{color:#F09E0B;}
+.footer p span{ margin:0 8px 0 10px;}
+
+/*信息反馈*/
+.evaluate{margin-top:30px;}
+.evaluate .eva-info1{ margin-bottom:25px;}
+.eva-info1 dt{ float:left; width:224px; height:218px; border:1px solid #dedede;  margin-right:20px;}
+.eva-info1 dd{ float:left;}
+.eva-info1 dd h3{ font-weight:normal; line-height:39px;}
+.eva-info1 dd h3 a{ font-size:18px; color:#272727;}
+.eva-info1 dd li{ line-height:35px;}
+.eva-info1 dd li span{display:inline-block;  width:80px; font-size:14px; color:#797979;}
+.eva-info1 dd li p{ display:inline-block; font-size:14px; color:#272727;}
+.eva-info1 dd li .p1{ font-size:18px; color:#F34737;}
+.evaluate .eva-info2{ border:1px solid #dedede; padding:15px 0;margin-bottom:20px;}
+.eva-info2 dt{ float:left; width:140px; margin-right:40px; border-right:1px solid #dedede; text-align:center;}
+.eva-info2 dt .p1{ font-size:18px; color:#F34737; line-height:45px;}
+.eva-info2 dt .p2{font-size:30px; color:#F34737; line-height:60px;}
+.eva-info2 dt .p3{ font-size:14px; color:#000;}
+.eva-info2 dd{ float:left; width:1010px;}
+.eva-info2 dd p{ font-size:14px; color:#F34737; line-height:35px;}
+.eva-info2 dd li{ float:left; width:125px; height:31px; line-height:31px; text-align:center; border:1px solid #F44737; background:#FFF7F7; margin:0 15px 15px 0;}
+.eva-info2 dd li a{ display:block; font-size:14px; color:#F34737;}
+/*我要评价*/
+.evaluate .eva-info3{ padding-bottom:18px;border:1px solid #DBDBDB; background:#F7F7F7;}
+.eva-info3 .eva-if3-l{ width:700px; margin:0 40px 0 20px;}
+.eva-info3 .eva-if3-l dl{ margin-top:10px;}
+.eva-info3 .eva-if3-l dt{ float:left; width:60px; font-size:14px; color:#1F1F1F; margin-right:20px;}
+.eva-info3 .eva-if3-l dd{ float:left; width:596px; background:#fff; padding:5px 10px;}
+.eva-info3 .eva-if3-l dd textarea{ width:580px; border:0; line-height:24px;}
+.eva-info3 .eva-if3-l .if3-l-dl1 dd{height:140px; }
+.eva-info3 .eva-if3-l .if3-l-dl1 dd textarea{height:135px; }
+.eva-info3 .eva-if3-l .if3-l-dl2 dd{height:88px; }
+.eva-info3 .eva-if3-l .if3-l-dl2 dd textarea{height:83px; }
+.eva-info3 .eva-if3-l .if3-l-dl3 dd{padding:10px; }
+.eva-info3 .eva-if3-l .if3-l-dl3 dd a{float:left; display:inline-block; width:42px; height:42px; margin-right:10px; position:relative;}
+.eva-info3 .eva-if3-l .if3-l-dl3 dd img{ width:100%; height:100%;}
+.eva-info3 .eva-if3-l .if3-l-dl3 dd p{ float:left;  font-size:14px; color:#4e4e4e; line-height:42px;}
+.eva-info3 .eva-if3-l .eva-btn{ font-size:16px; color:#fff;width:98px; height:37px; background:#F34737; border:none; cursor:pointer; margin:10px 0 0 83px;}
+.eva-info3 .eva-if3-r{ width:400px;}
+
+#rightlan{
+            position: fixed;
+            right: -50px;
+            bottom: 50px;
+            width: 100px;
+            height: 200px;
+        }
+#rightlan li{
+  margin-top: 10px;
+  display: block;
+}
+h1, .h1, h2, .h2, h3, .h3{ margin-top:0; margin-bottom:0;}
+  #ddiv{
+  margin:0 auto;
+  width:1200px;
+  background: #ccc;
+  /*text-align: center;*/
+  font-size: 20px;
+  padding-left: 10px;
+}
+#ddiv1{
+  margin:0 auto;
+  width:100%;
+  background: #ccc;
+  margin-top: 5px;
+  text-align: center;
+}
+.rule{
+    font-weight: bold;
+    font-size: 12px;
+    color: blue
+  }
+  #tip1{
+    position: absolute;
+    display: inline;
+    top: 17%;
+    left: 100%;
+  }
+  #tip2{
+    position: absolute;
+    display: inline;
+    top: 45%;
+    left: 100%;
+  }
+  .eva-if3-l{
+    position: relative;
+  }
+  .zj_l{
+    width: 500px;
+    height: 500px;
+    display: block;
+    background: #f60;
+  }
+  #aasj{
+    width: 100%;
+    margin: 0 auto;
+    background: #ccc;
+    margin-top: 30px;
+  }
+  .sou,.soubg{
+    width: 1200px;
+  }
+  #div012{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            left: -80px;
+            top: 50%;
+            background: url("../images/fenxiang.jpg");
+        }
+        #div012 span{
+            position: absolute;
+            left: 80px;
+            background:#ccc;
+        }
+        #datepicker{
+    width: 100px;
+    position: relative;
+    top: -1035px;
+    left: 360px;
+  }
+  .ss{
+  width: 12%;
+}
+.ss_list{
+  width: 90%;
+}
